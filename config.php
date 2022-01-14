@@ -47,4 +47,16 @@ if (isset($_POST['job'])) {
     $job = "INSERT INTO `jobs`(`cname`, `position`, `Jdesc`, `skills`, `CTC`) VALUES('$cname','$position','$Jdesc','$skills','$CTC')";
     mysqli_query($conn, $job);
 }
+
+if (isset($_POST['sub'])) {
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $qual = mysqli_real_escape_string($conn, $_POST['qual']);
+    $apply = mysqli_real_escape_string($conn, $_POST['apply']);
+    $year = mysqli_real_escape_string($conn, $_POST['year']);
+
+    $app = "INSERT INTO `candidates`(`name`, `apply`, `qual`, `year`) VALUES ('$name','$apply','$qual','$year')";
+    // var_dump($app);
+    // die();
+    mysqli_query($conn, $app);
+}
 // mysqli_close($conn);
