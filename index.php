@@ -58,7 +58,7 @@
                     <td>" . ++$i . "</td>
                         <td>" . $row['cname'] . "</td>
                         <td>" . $row['position']  . "</td>
-                        <td>" . $row['CTC']  . "</td>
+                        <td>" . $row['CTC']  . " LPA</td>
                     </tr>";
             }
         } else {
