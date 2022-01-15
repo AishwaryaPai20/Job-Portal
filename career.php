@@ -41,7 +41,7 @@
         if ($Result->num_rows > 0) {
             while ($row = $Result->fetch_assoc()) {
                 echo '
-                <div class="col-md-4" style="padding-left: 5px; box-shadow: 7px 5px 5px purple; border: 3px solid black;">
+                <div class="col-md-4" style="margin: 10px;padding-left: 5px; box-shadow: 7px 5px 5px purple; border: 3px solid black;">
                 <div class="jobs" style="border: 2px black; padding: 5px; ">
                 <h3 style="text-align: center;">' . $row['position'] . '</h3>
                 <h4 style="text-align: center;">' . $row['cname'] . '</h4>

@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'header_active.php' ?>
 <?php include 'config.php' ?>
 
 <div class="content">
